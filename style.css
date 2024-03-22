@@ -1,0 +1,69 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #0A0C1B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+.stats-box {
+    width: 80%;
+    display: flex;
+}
+.stats-box__img-fr {
+    visibility: hidden;
+}
+.stats-info {
+    width: 50%;
+    height: 330px;
+    padding: 70px;
+    background: #1C1938;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.stats-info__title {
+    font-size: 40px;
+}
+.stats-info__subtitle {
+    margin: 20px 0;
+    font-size: 20px;
+    width: 90%;
+    line-height: 1.5;
+}
+.stats-item {
+    font-size: 30px;
+    margin-right: 50px;
+    margin-top: 70px;
+    display: inline-block;
+}
+.stats-item p {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.stats-box__img {
+    width: 40%;
+    height: 470px;
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+@media only screen and (max-width: 480px) {
+ .stats-box__img {
+    visibility: hidden;
+ }    
+ .stats-box__img-fr {
+    visibility: visible !important;
+    content:  url(images/image-header-mobile.jpg);
+    margin-top: 20px;
+ }
+ .stats-box {
+    display: block;
+ } 
+}
